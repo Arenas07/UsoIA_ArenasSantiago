@@ -13,8 +13,10 @@ async function getAllCharacters() {
         data.results.forEach(char => {
             templateHtml += `
                 <div class="char-div">
-                    <img src="${char.image}">
+                    <img class="character-image" src="${char.image}">
                     <h2>${char.name}</h2>
+                    <p>Estado: ${char.status}</p>
+
                 </div>
             `;
         });
