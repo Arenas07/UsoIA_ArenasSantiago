@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendGear - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TrendGear - Gestión de Usuarios</h1>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab active" data-tab="get">Ver Usuarios</button>
+        <button class="tab" data-tab="post">Registrar Usuario</button>
+    </nav>
+
+    <main>
+
+        <section id="get" class="tab-content active">
+            <h2>Lista de Usuarios</h2>
+
+            <div class="cards-container">
+
+                <div id="user-list" class="cards-container"></div>
+
+            </div>
+        </section>
+
+        <section id="post" class="tab-content">
+            <h2>Registrar Usuario</h2>
+
+            <form id="user-form" class="form-container">
+
+                <div class="form-row">
+                    <label for="firstName">Primer Nombre</label>
+                    <input id="firstName" type="text" name="firstName" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="lastName">Apellido</label>
+                    <input id="lastName" type="text" name="lastName" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Teléfono</label>
+                    <input id="phone" type="text" name="phone">
+                </div>
+
+                <div class="form-row">
+                    <label for="birthDate">Fecha de nacimiento</label>
+                    <input id="birthDate" type="date" name="birthDate">
+                </div>
+
+                <div class="form-row">
+                    <label for="gender">Género</label>
+                    <input id="gender" type="text" name="gender">
+                </div>
+
+                <div class="form-row">
+                    <label for="country">País</label>
+                    <input id="country" type="text" name="country">
+                </div>
+
+                <div class="form-row">
+                    <label for="adress">Dirección</label>
+                    <input id="adress" type="text" name="adress">
+                </div>
+
+                <div class="form-row">
+                    <label for="preferedPaymentMethod">Método de pago preferido</label>
+                    <input id="preferedPaymentMethod" type="text" name="preferedPaymentMethod">
+                </div>
+
+                <div class="form-row">
+                    <label for="shippingPreference">Preferencia de envío</label>
+                    <input id="shippingPreference" type="text" name="shippingPreference">
+                </div>
+
+                <div class="form-row">
+                    <label for="averageSpend">Gasto promedio</label>
+                    <input id="averageSpend" type="number" name="averageSpend">
+                </div>
+
+                <div class="form-row">
+                    <label for="lastPurchaseDate">Última fecha de compra</label>
+                    <input id="lastPurchaseDate" type="date" name="lastPurchaseDate">
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar</button>
+
+            </form>
+        </section>
+
+
+        <section id="put" class="tab-content">
+            <h2>Editar Usuario</h2>
+
+            <div id="user-list-edit" class="cards-container"></div>
+
+        </section>
+
+        <section id="delete" class="tab-content">
+            <h2>Eliminar Usuario</h2>
+
+            <div id="user-list-delete" class="cards-container"></div>
+
+        </section>
+
+    </main>
+
+</body>
+<script type="module" src="./scripts/app.js"></script>
+</html>
